@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from 'components/Feedback/Feedback.module.css';
 
 const Feedback = ({ options, onLeaveFeedback }) => (
-  <div style={{ display: 'flex', gap: '10px' }}>
+  <div className={styles.container}>
     {options.map(option => (
       <button
         key={option}

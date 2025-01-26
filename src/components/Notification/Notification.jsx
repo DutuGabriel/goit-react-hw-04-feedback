@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from 'components/Notification/Notification.module.css';
 
 const Notification = ({ message }) => (
-  <p style={{ fontSize: '18px', color: '#666' }}>{message}</p>
+  <p className={styles.message}>{message}</p>
 );
 
 Notification.propTypes = {
